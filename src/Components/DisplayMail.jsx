@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Box, Button, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+
 import expand from "../assets/expandButton.png";
 import replyIcon from "../assets/reply.png";
 import MsgBox from './MsgBox';
@@ -11,7 +12,6 @@ import DeleteModal from './DeleteModal';
 import { useSelector } from "react-redux";
 
 const DisplayMail = () => {
-    
     const [reply, setReply] = useState(false);
     const [deletemail, setDeleteMail] = useState(false);
     const [readAll, setReadAll] = useState(false);
@@ -297,7 +297,7 @@ const DisplayMail = () => {
           <Button
             style={{
               position: "relative",
-             
+              // top: "140px",
               background:
                 "linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%)",
               color: "white",

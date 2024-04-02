@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import logom from "../assets/mlogo.png";
 import Dl from "../assets/Dlogo.png";
 import mhome from "../assets/menubarHOME.png";
@@ -19,9 +19,7 @@ const MenuItem = () => {
    
    
     return (
-
-       
-      <>
+       <>
         <Box
           sx={{
             height: "100vh",
@@ -35,11 +33,12 @@ const MenuItem = () => {
           }}
         >
           <img
+           onClick={() => dispatch({ type: "MAILS", payload: [] })}
            src={theme ? logom : Dl}
             alt="logoM"
             width="26px"
             className="m-8 mt-6"
-            onClick={() => dispatch({ type: "MAILS" })}
+           
           />
           <Box
             sx={{
@@ -64,9 +63,9 @@ const MenuItem = () => {
           
               <img src={macct} alt="menubarEmailAcc" width="26px" />
            
-          
+          <Link>
               <img src={msend} alt="menubarsendemail" width="26px" />
-            
+              </Link>
             
               <img src={barmenu} alt="menubarMENU" width="26px" />
             

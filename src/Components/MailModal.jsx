@@ -1,6 +1,5 @@
-import React from 'react'
+import CloseIcon from "@mui/icons-material/Close";
 import { Box, Typography, Button } from "@mui/material";
-import { useSelector } from "react-redux";
 import dropDown from "../assets/arrow_drop_down.png";
 import flash_on from "../assets/flash_on.png";
 import remove_red_eye from "../assets/remove_red_eye.png";
@@ -9,10 +8,9 @@ import imageAttachment from "../assets/imageAttachment.png";
 import emoji from "../assets/emoji.png";
 import person_remove from "../assets/person_remove.png";
 import unfold_more from "../assets/unfold_more.png";
-
+import { useSelector } from "react-redux";
 
 const MailModal = ({ setReply }) => {
-    
     const mailBody = {
         toName: "Mitrajit",
         to: "chandra.rupam@gmail.com",
@@ -246,4 +244,5 @@ const MailModal = ({ setReply }) => {
         </>
       );
     }
+    
 export default MailModal

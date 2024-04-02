@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
 import { useEffect } from "react";
-import { useLocation, useNavigate, useParams } from "react-router";
-import { useSelector,useDispatch } from "react-redux";
+import { useLocation, useNavigate} from "react-router";
+import { useDispatch, useSelector } from "react-redux";
 import MenuItem from "../Components/MenuItem";
 import HeadPart from "../Components/HeadPart";
 import MailPage from "../Components/MailPage";
@@ -12,10 +12,10 @@ import FirstPage from "../Components/FirstPage";
 function HOME() {
   // const isLoggedIn = useSelector((state) => state.isLoggedIn);
   const mails = useSelector((state) => state.mails);
-  const state = useSelector((state) => state);
+//   const state = useSelector((state) => state);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
     const getMails = async () => {
       const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -43,6 +43,8 @@ function HOME() {
   const location = useLocation();
   const token = location.search.substring(7);
   localStorage.setItem("token", token);
+
+
   return (
     <>
       <Box sx={{ display: "flex" }}>
@@ -54,6 +56,7 @@ function HOME() {
             left: "56px",
             flexDirection: "column",
             position: "relative",
+            
             width: "95.5%",
           }}
         >
