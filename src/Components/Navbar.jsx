@@ -5,11 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
-          <Box
-          // margin={"50px auto"}
-          // display={"flex"}
-          // justifyContent={"space-around"}
-          >
+          <Box>
              <Link to="/home">HOME</Link>
             <Link to="/login">LOGIN</Link>
           </Box>
