@@ -10,7 +10,10 @@ function Login() {
   const dispatch = useDispatch();
   return (
     <>
-      
+      <Box sx={{
+        height:"100vh",
+        bgcolor:"red"
+      }}>
       <Box
         sx={{
           border: "1px solid #25262B",
@@ -25,7 +28,7 @@ function Login() {
       </Box>
       <Box
         sx={{
-          padding: "120px",
+          padding: "160px",
           bgcolor: theme ? "black" : "white",
         }}
       >
@@ -111,6 +114,7 @@ function Login() {
       >
         © 2023 Reachinbox. All rights reserved.
       </Typography>
+      </Box>
     </>
   );
 }

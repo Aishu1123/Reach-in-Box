@@ -5,6 +5,11 @@ export const login = () => {
   };
 
 
+// export const getnewmails = (mails)=>({
+//   type:"GETMAILS",
+//   payload:mails
+// })
+
   export const theme=createTheme({
     palette: {
         type: "dark",

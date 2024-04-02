@@ -7,30 +7,24 @@ import { useEffect } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const HeadPart = () => {
-  const theme = useSelector((state) => state.darkMode);
-
-  const handleDarkMode = () => {
-    dispatch({ type: "THEME" });
-  };
-
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
-  
-  
-  useEffect(() => {
-    const slider =
-      document.getElementById("outerbox1") ||
-      document.getElementById("insidecircle1");
-    slider.addEventListener("click", () => {
-      const circle = document.getElementById("insidecircle1");
-      if (getComputedStyle(circle).left == "10px") {
-        circle.style.left = "50%";
-       
-      } else {
-        circle.style.left = "10px";
+    const theme = useSelector((state) => state.darkMode);
+    const dispatch = useDispatch();
+    useEffect(() => {
+      const slider =
+        document.getElementById("outerbox1") ||
+        document.getElementById("insidecircle1");
+      slider.addEventListener("click", () => {
+        const circle = document.getElementById("insidecircle1");
+        if (getComputedStyle(circle).left == "5px") {
+          circle.style.left = "50%";
+        } else {
+          circle.style.left = "5px";
         }
-    });
-  }, []);
+      });
+    }, []);
+    const handleDarkMode = () => {
+      dispatch({ type: "THEME" });
+    };
 
   return (
     <>

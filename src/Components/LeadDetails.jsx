@@ -28,8 +28,10 @@ const LeadDetails = () => {
         <Box
           sx={{
             marginLeft: "5px",
+            width:"250px"
+
           }}
-          className="flex  flex-col w-56"
+          className="flex  flex-col "
         >
           <Box className="flex flex-col   gap-2">
             <Box

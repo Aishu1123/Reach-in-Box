@@ -1,5 +1,5 @@
 import React from 'react'
-// import noMailIllustration from "../assets/noMailIllustration.png";
+
 import { Box } from "@mui/material";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -17,7 +17,7 @@ const MailPage = () => {
           sx={{
             display: "flex",
             
-            height: "1100px",
+            minheight: "100vh",
             bgcolor: theme ? "#000000" : "#FAFAFA",
             color: theme ? "#FAFAFA" : "#000000",
           }}

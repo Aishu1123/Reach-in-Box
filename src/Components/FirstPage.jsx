@@ -2,15 +2,14 @@ import React from 'react'
 import { useSelector } from "react-redux";
 import noMailIllustration from "../assets/noMailIllustration.png";
 import { Box, Typography } from "@mui/material";
-import MenuItem from './MenuItem';
-import HeadPart from './HeadPart';
+
 
 
 const FirstPage = () => {
   
     const theme = useSelector((state) => state.darkMode);
   
-    const isLoggedIn = useSelector((state) => state.isLoggedIn);
+   
   
     return (
       <>

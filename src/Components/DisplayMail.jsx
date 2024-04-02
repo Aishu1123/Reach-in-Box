@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Button, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
@@ -10,13 +10,15 @@ import MailModal from './MailModal';
 import DeleteModal from './DeleteModal';
 
 import { useSelector } from "react-redux";
+import axios from 'axios';
 
 const DisplayMail = () => {
     const [reply, setReply] = useState(false);
     const [deletemail, setDeleteMail] = useState(false);
     const [readAll, setReadAll] = useState(false);
-  
+
     const theme = useSelector((state) => state.darkMode);
+    
     const message = {
       subject: "New Product Launch",
       time: "20 june 2022 : 9:16AM",
@@ -40,13 +42,15 @@ const DisplayMail = () => {
     }
   
     window.addEventListener("keydown", handleKeyDown);
-  
+
+    
+    
     return (
       <>
         <Box>
           <Box
             sx={{
-              width: "700px",
+              width: "890px",
               height: "70px",
               top: "69px",
               left: "363px",
@@ -57,8 +61,6 @@ const DisplayMail = () => {
               justifyContent: "space-between",
               borderRadius: "7px 7px 0px 0px",
               border: "0px solid transparent",
-              // borderBottom: "1px solid #101113",
-  
               bgcolor: theme ? "#000000" : "#FAFAFA",
               color: theme ? "#FAFAFA" : "#000000",
             }}
@@ -297,7 +299,7 @@ const DisplayMail = () => {
           <Button
             style={{
               position: "relative",
-              // top: "140px",
+             
               background:
                 "linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%)",
               color: "white",

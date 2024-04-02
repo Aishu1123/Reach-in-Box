@@ -3,11 +3,12 @@ import { Box, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
 
 const MsgBox = ({ message }) => {
-    const theme = useSelector((theme) => theme.darkMode);
+    
+  const theme = useSelector((theme) => theme.darkMode);
     return (
       <Box
         sx={{
-          width: "753px",
+          width: "800px",
          
           bgcolor: theme ? "#141517" : "#FAFAFA",
           padding: "20px",
@@ -32,7 +33,7 @@ const MsgBox = ({ message }) => {
               justifyContent: "space-between",
             }}
           >
-            {/* background: #7F7F7F; */}
+          
             <Typography>{message.subject}</Typography>
             <Typography
               sx={{
