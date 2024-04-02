@@ -74,7 +74,7 @@ const HeadPart = () => {
               style={{ position: "absolute", top: "7px", left: "10px" }}
               src={dm}
               alt="darkMode"
-              e5e7e9
+            //   e5e7e9
             />
             <Box sx={{ bgcolor: "#7E7d7E" }} id="insidecircle1"></Box>
           </Box>

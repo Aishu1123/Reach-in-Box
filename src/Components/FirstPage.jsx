@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from "react-redux";
 import noMailIllustration from "../assets/noMailIllustration.png";
 import { Box, Typography } from "@mui/material";
-import { useEffect } from "react";
+
 import { useNavigate } from "react-router";
 const FirstPage = () => {
     const navigate = useNavigate();
