@@ -11,6 +11,7 @@ import DeleteModal from './DeleteModal';
 import { useSelector } from "react-redux";
 
 const DisplayMail = () => {
+    
     const [reply, setReply] = useState(false);
     const [deletemail, setDeleteMail] = useState(false);
     const [readAll, setReadAll] = useState(false);

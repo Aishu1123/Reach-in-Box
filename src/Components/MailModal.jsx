@@ -31,7 +31,7 @@ const MailModal = ({ setReply }) => {
       const handleReply = async () => {
         const tok = localStorage.getItem("token");
         const res = await fetch(
-          "https://hiring.reachinbox.xyz/api/v1/onebox/list",
+          "https://hiring.reachinbox.xyz/api/v1/onebox/reply/:thread_id",
           {
             method: "POST",
             headers: {
@@ -40,7 +40,8 @@ const MailModal = ({ setReply }) => {
             body: JSON.Stringify(mailBody),
           }
         );
-        const mails = await res.json();
+        const mailSent = await res.json();
+        console.log(mailSent);
       };
       const theme = useSelector((state) => state.darkMode);
       return (
@@ -63,8 +64,16 @@ const MailModal = ({ setReply }) => {
                 "linear-gradient(180deg, #4A5055 0%, #2A2F32 100%)",
             }}
           >
-       
-       <Box
+            {/* <Box sx={ {width: Fixed (752px)px;
+    height: Fixed (38px)px;
+    padding: 20px 32px 20px 32px;
+    gap: 10px;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+     background: #23272C;
+     border: 1px solid #41464B}}  >Reply</Box> */}
+            <Box
               className="flex justify-between items-center"
               sx={{
                 width: "752px",
@@ -72,15 +81,16 @@ const MailModal = ({ setReply }) => {
                 padding: "20px 32px",
                 gap: "10px",
                 borderRadius: "8px 8px 0px 0px",
-                
+                // borderBottom: "1px solid #41464B",
                 borderBottom: `1px solid ${theme ? "#41464B" : "#E8E8E8"}`,
-                
+                // background: "#23272C",
                 color: theme ? "#FAFAFA" : "black",
                 bgcolor: theme ? "#23272C" : "#ECEFF3",
               }}
             >
               <Typography> Reply</Typography>
-              <button onClick={() => setReply(false)}>X</button>
+              <CloseIcon onClick={() => setReply(false)} />
+              {/* <Typography onClick={() => setReply(false)}>X</Typography> */}
             </Box>
     
             <Box
@@ -176,7 +186,7 @@ const MailModal = ({ setReply }) => {
                     "linear-gradient(91.73deg, #4B63DD -2.99%, rgba(5, 36, 191, 0.99) 95.8%)",
                   color: "white",
                 }}
-                onClick={() => setReply(false)}
+                onClick={() => handleReply}
                 variant="contained"
               >
                 <Typography>Send</Typography>
