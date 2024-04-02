@@ -69,7 +69,7 @@ function Login() {
                 localStorage.setItem("isLoggedIn", true);
                 dispatch({ type: "LOGIN", payload: true });
               }}
-              to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:5173/"
+              to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reach-in-box.vercel.app/"
             //   to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-mails.netlify.app"
             >
               Sign Up with Google
@@ -96,7 +96,7 @@ function Login() {
                   localStorage.setItem("isLoggedIn", true);
                   dispatch({ type: "LOGIN", payload: true });
                 }}
-                to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:5173/"
+                to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reach-in-box.vercel.app/"
                 // to="https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reachinbox-mails.netlify.app"
               >
                 Sign In
