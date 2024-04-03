@@ -54,7 +54,28 @@ Implement the ability to reply to threads:
 
 ## 8. Light and Dark Mode
   Provide support for both light and dark mode themes within the web app.
- 
+
+## 9. Screenshots
+-Login
+![Screenshot (211)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/74336928-e822-40da-80f9-017da08f3ef7)
+
+-Google Auth
+![Screenshot (212)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/96152937-2229-4b86-85b2-a100ba8504c4)
+
+-FirstPage
+![Screenshot (213)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/2ca32281-35ff-4b87-81d2-2c90abe00121)
+![Screenshot (214)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/3fd8fffb-7207-4271-a528-5b4183d4bb03)
+
+-AllMailPage
+![Screenshot (215)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/e1550ecd-76ab-489c-b093-fdbad7dc9c14)
+
+![Screenshot (222)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/4e8f7986-de6c-42e5-9cb6-29d0e031b66f)
+
+-Reply And Delete
+![Screenshot (217)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/8a13f329-490f-47b4-916c-15b0385834be)
+![Screenshot (218)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/9ac53569-bf5b-4c9b-abf5-0939f57be154)
+![Screenshot (219)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/439cb11b-ab16-4444-ba2d-fc0174e111e4)
+
  ## Technical Stack
 
 - **Frontend:**
