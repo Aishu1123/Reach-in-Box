@@ -71,7 +71,8 @@ Implement the ability to reply to threads:
 
 ![Screenshot (222)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/4e8f7986-de6c-42e5-9cb6-29d0e031b66f)
 
--Reply And Delete
+-Reply And Delete <br>
+When you press the letter 'D', the reply box will open. You can also use the reply button to open it. Reply box is where you can type your response and send it back to the thread. You can also add variable to sending your reply.<br> Pressing 'D' opens a dialog box. Clicking 'Delete' will remove the current thread.
 ![Screenshot (217)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/8a13f329-490f-47b4-916c-15b0385834be)
 ![Screenshot (218)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/9ac53569-bf5b-4c9b-abf5-0939f57be154)
 ![Screenshot (219)](https://github.com/Aishu1123/Reach-in-Box/assets/147596468/439cb11b-ab16-4444-ba2d-fc0174e111e4)
