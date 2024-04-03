@@ -176,7 +176,7 @@ function MailCard({ mail }) {
     </>
   );
 }
-
+// Fetching mail card
 export default MailCard;
 
 

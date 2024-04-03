@@ -103,5 +103,6 @@ function DeleteModal({ setDeleteMail }) {
 
 export default DeleteModal;
 
+// Delete button is working fine
 
 

@@ -115,6 +115,8 @@ function MailInbox() {
   );
 }
 
+// Display the cards
+
 export default MailInbox;
 
 

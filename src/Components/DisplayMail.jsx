@@ -43,7 +43,7 @@ const DisplayMail = () => {
   
     window.addEventListener("keydown", handleKeyDown);
 
-    
+    // Fetching data
     
     return (
       <>

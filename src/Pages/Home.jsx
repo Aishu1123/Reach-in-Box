@@ -79,8 +79,7 @@ function HOME() {
       
       const mails = await res.json();
       console.log(mails.data);
-      // mails.data.forEach((mail) => initialMails.push(mail));
-      // console.log("MAILS", initialMails);
+     
       dispatch({ type: "MAILS", payload: mails.data });
       
      
@@ -99,7 +98,7 @@ function HOME() {
   return (
 
     <>
-    {/* {JSON.stringify(store)} */}
+   
       <Box sx={{ display: "flex" }}>
         <MenuItem/>
 
